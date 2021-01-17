@@ -6,7 +6,7 @@ const Card = (props) => {
         
         <a className="box" href={props.path}>
             <div className="videoBox">
-                <img src={props.src} width='100%' />
+                <img src={props.src} width='100%' alt="project" />
             </div>
             <div className="textBox">
                 <div className="text">
