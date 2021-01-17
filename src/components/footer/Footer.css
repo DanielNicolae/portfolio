@@ -1,0 +1,65 @@
+.footer
+{
+    background-color: rgb(37, 37, 37);
+    color:ivory;
+    padding: 1em;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+
+.links
+{
+    margin-left: 3em;
+    flex: 1;
+}
+
+.contactForm
+{
+    flex: 1;
+}
+
+.empty
+{
+    flex: 1;
+}
+
+.contacts
+{
+    padding-bottom: 1em;    
+}
+
+@media only screen and (max-width: 560px)
+{
+    .links
+    {
+        margin-left: 0;
+    }
+    .footer
+    {
+        flex-direction: column;   
+    }
+    .contacts
+    {
+        text-align: center;
+    }
+    .footer__link
+    {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer__link
+{
+    display: flex;
+    align-items: center;
+    color:ivory;
+    text-decoration: none;
+    padding-bottom: 1em;
+}

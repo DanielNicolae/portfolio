@@ -1,0 +1,112 @@
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: #051230;
+    color: ivory;
+    position: relative; 
+    width: 100%;  
+}
+
+.header span
+{
+    position: relative;
+    font-size: 2em;
+    display: inline-block;
+    -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(218, 218, 218, 0.5));
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%, 100%
+    {
+        transform: translateY(0px);
+    }
+    
+}
+
+@media only screen and (max-width:500px) {
+    .header span
+    {
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:300px) {
+    .header span
+    {
+        font-size: 1em;
+    }
+}
+
+.menuButtons
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menuButtons label
+{
+    position: relative;
+    transform: translate(0, -20px);
+}
+
+.menuButtons label input
+{
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.menuButtons label .fa
+{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color:   rgb(6, 2, 37);
+    line-height: 70px;
+    text-align: center;
+    margin: 0 40px;
+    color: ivory;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
+                3px 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+.menuButtons label .fa:hover
+{
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
+                3px 3px 7px rgba(0, 0, 0, 0.8),
+                inset -3px -3px 10px rgba(255, 255, 255, 0.1),
+                inset 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* .menuButtons label input:checked ~ .fa
+{
+    color:rgb(0, 204, 255);
+    box-shadow: inset -3px -3px 10px rgba(255, 255, 255, 0.1),
+                inset 3px 3px 10px rgba(0, 0, 0, 0.8);
+} */
+
+.transition
+{
+    transform: translateZ(-10px);
+    height: 40px;
+    background-image: linear-gradient(#051230, transparent);
+}

@@ -1,0 +1,67 @@
+*
+{
+    box-sizing: border-box;
+    
+}
+
+
+.box 
+{
+    position: relative;
+    width: 17em;
+    height: 10em;
+    background-color: ivory;
+}
+
+.box .videoBox
+{
+   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box .videoBox video
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+}
+
+.box .textBox
+{
+    position: absolute;
+    color: #1d1d1d;
+    background-color: rgba(233, 233, 233, 0.623);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.box:hover .textBox
+{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.box .textBox .text
+{
+    position: relative;
+    padding: 1em;
+    opacity: 0;
+}
+
+.box:hover .textBox .text
+{
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}

@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Fredoka+One&display=swap');
+
+.contactForm
+{
+    color: ivory;
+    display: grid;
+    margin: 0 auto;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input
+{
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 900px)
+{
+    .input
+    {
+        width: 340px;
+    }
+}
+
+.message
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.subject
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.email
+{
+    margin-bottom: 0.2em;
+}
+
+.messageArea
+{
+    min-height: 4em;
+    margin-bottom: 1em;
+}
+
+.submitButton
+{
+    text-align: center;
+    height: 3em;
+    background-color: rgb(37, 37, 37);
+    color: ivory;
+    font-size: 2em;
+    border: none;
+    overflow: hidden;
+    width: 200px;
+}
+
+.submitButton:hover
+{
+    color: rgb(255, 115, 0);
+    text-shadow: 3px 2px   rgba(255, 115, 0, 0.671);
+    border: rgba(17, 206, 253, 0.89);
+    background-color: rgba(17, 206, 253, 0.89);
+    box-shadow: 0 0 5px rgba(17, 206, 253, 0.89),
+                0 0 10px rgba(17, 206, 253, 0.89),
+                0 0 25px rgba(17, 206, 253, 0.89),
+                0 0 50px rgba(17, 206, 253, 0.89);
+    cursor: pointer;
+}
+
+.submitButton span
+{
+    position: relative;
+    display: block;
+}
+
+.submitText
+{
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 4px;
+    position: relative;
+    top: 0.85em;
+}
+
+.submitButton span:nth-child(2)
+{
+    top: -1.2em;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(17, 206, 253, 0.89));
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%, 100%
+    {
+        left: 100%;
+    }
+}
+
+.submitButton span:nth-child(3)
+{
+    top: 0%;
+    left: 6.2em;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(17, 206, 253, 0.89));
+    animation: animate2 1s linear infinite;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%, 100%
+    {
+        top: 100%;
+    }
+}
+
+.submitButton span:nth-child(4)
+{
+    bottom: 1.4em;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-90deg, transparent, rgba(17, 206, 253, 0.89));
+    animation: animate3 1s linear infinite;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%, 100%
+    {
+        right: 100%;
+    }
+}
+
+.submitButton span:nth-child(5)
+{
+    top: 100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, rgba(17, 206, 253, 0.89));
+    animation: animate4 1s linear infinite;
+}
+@keyframes animate4
+{
+    0%
+    {
+        top: 100%;
+    }
+    50%, 100%
+    {
+        top: -240%;
+    }
+}
