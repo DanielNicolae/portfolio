@@ -4,7 +4,7 @@ import './Card.css';
 const Card = (props) => {
     return (
         
-        <a className="box" href={props.path}>
+        <a className="box" href={props.path} target="_blank">
             <div className="videoBox">
                 <img src={props.src} width='100%' alt="project" />
             </div>

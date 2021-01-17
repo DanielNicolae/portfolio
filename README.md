@@ -1,3 +1,3 @@
-# Portofolio
+# Portfolio
 
-This is a project made in React for my portofolio.
+This is a project made in React for my portfolio.
