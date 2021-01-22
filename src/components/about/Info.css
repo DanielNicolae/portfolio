@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 h1
@@ -15,4 +16,22 @@ h1
 .container .info
 {
     color: ivory;
+}
+
+
+.container a img 
+{
+    max-width:100%;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .container .info
+    {
+        font-size: small;
+    }
+    .container a img 
+    {
+        width: 300px;
+    }
 }

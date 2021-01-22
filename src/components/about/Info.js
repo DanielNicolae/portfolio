@@ -17,7 +17,9 @@ function Info() {
                     I created video games for Android in Unity.
                 </a>
             </ul>
-            <img src='../images/CS50W.PNG' alt='CS50W certificate'></img>
+            <a href='https://courses.edx.org/certificates/104c73449a9340108ea665d055cd8150' target="_blank">
+                <img src='../images/CS50W.PNG' alt='CS50W certificate'></img>
+            </a>
         </div>
         </>
     )
