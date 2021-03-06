@@ -5,7 +5,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="links">
                 <h2 className="contacts">Contacts</h2>
                 <a className="footer__link" href="https://github.com/DanielNicolae" rel="noreferrer" target="_blank">
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <ContactForm className="contactForm" />
             <div className="empty"></div>
-        </div>
+        </footer>
     )
 }
 

@@ -10,10 +10,12 @@ function App() {
     <BR>
       <div className="App">
         <Header />
-        <Switch>
-          <Route path="/" exact component={Projects} />
-          <Route path="/about" component={About} />
-        </Switch>
+        <main>
+          <Switch>
+            <Route path="/" exact component={Projects} />
+            <Route path="/about" component={About} />
+          </Switch>
+        </main>
         <Footer />
       </div>
     </BR>

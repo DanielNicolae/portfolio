@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Header = () => {
     
     return (
-        <>
+        <header>
         <div className="header">
             <span style={{"--i": 1}}>D</span>
             <span style={{"--i": 2}}>O</span>
@@ -30,7 +30,8 @@ const Header = () => {
             
         </div>
         <div className="transition"></div>
-        <div className="menuButtons">
+
+        <nav className="menuButtons">
             <Link to="/">
                 <label>
                     <input type="radio" name="menu" />
@@ -43,9 +44,9 @@ const Header = () => {
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                 </label>
             </Link>
-        </div>
+        </nav>
         
-        </>
+        </header>
     );
 }
 
