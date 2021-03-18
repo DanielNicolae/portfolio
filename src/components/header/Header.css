@@ -37,18 +37,6 @@
     
 }
 
-@media only screen and (max-width:500px) {
-    .header span
-    {
-        font-size: 1.5em;
-    }
-}
-@media only screen and (max-width:300px) {
-    .header span
-    {
-        font-size: 1em;
-    }
-}
 
 .menuButtons
 {
@@ -97,16 +85,30 @@
                 inset 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* .menuButtons label input:checked ~ .fa
-{
-    color:rgb(0, 204, 255);
-    box-shadow: inset -3px -3px 10px rgba(255, 255, 255, 0.1),
-                inset 3px 3px 10px rgba(0, 0, 0, 0.8);
-} */
-
 .transition
 {
     transform: translateZ(-10px);
     height: 40px;
     background-image: linear-gradient(#051230, transparent);
+}
+
+@media only screen and (max-width:500px) {
+    .header span
+    {
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:300px) {
+    .header span
+    {
+        font-size: 1em;
+    }
+    .menuButtons label .fa
+    {
+        width: 50px;
+        height: 50px;
+        margin: 0 20px;
+        line-height: 50px;
+        font-size: 30px;
+    }
 }
