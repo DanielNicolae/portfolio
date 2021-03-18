@@ -33,13 +33,13 @@ const Header = () => {
 
         <nav className="menuButtons">
             <Link to="/">
-                <label>
+                <label area-label="Projects">
                     <input type="radio" name="menu" />
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </label>
             </Link>
             <Link to="/about">
-                <label>
+                <label area-label="About">
                     <input type="radio" name="menu" />
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                 </label>
