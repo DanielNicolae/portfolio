@@ -31,8 +31,11 @@ const ContactForm = () => {
 
     return (
         <form className='contactForm' onSubmit={handleSubmit}>
+            <label for="email">*Your email</label>
             <input className='input' type='email' placeholder='*Your email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} ref={register({required: true})} />
+            <label for="subject">*Subject</label>
             <input className='input' type='text' placeholder='*Subject' name='subject' value={subject} onChange={(e) => setSubject(e.target.value)} ref={register({required: true})} />
+            <label for="message">*Message</label>
             <textarea className='input messageArea' type='text' placeholder='*Message...' name='message' value = {message} onChange={(e) => setMessage(e.target.value)} ref={register({required: true})} />
             <p>* The field is required</p>
             <button className='submitButton' type='submit'>
