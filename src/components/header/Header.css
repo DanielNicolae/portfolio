@@ -112,3 +112,24 @@
         font-size: 30px;
     }
 }
+@media only screen and (max-width:210px) {
+    .header span
+    {
+        font-size: 0.7em;
+    }
+    .menuButtons
+    {
+        flex-direction: column;
+    }
+    .menuButtons label .fa
+    { 
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width:160px) {
+    .header span
+    {
+        font-size: 0.5em;
+    }
+    
+}

@@ -19,13 +19,7 @@
     margin-bottom: 1em;
 }
 
-@media screen and (min-width: 900px)
-{
-    .input
-    {
-        width: 340px;
-    }
-}
+
 
 .message
 {
@@ -61,6 +55,7 @@
     overflow: hidden;
     width: 200px;
 }
+
 
 .submitButton:hover
 {
@@ -170,5 +165,33 @@
     50%, 100%
     {
         top: -240%;
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    .input
+    {
+        width: 340px;
+    }
+}
+@media screen and (max-width: 230px)
+{
+    .input
+    {
+        width: 100px;
+    }
+    .submitButton 
+    {
+        font-size: 0.8em;
+        width: 100px;
+    }
+    .submitButton span:nth-child(3)
+    {
+        left: 7.3em;
+    }
+    .contactForm p 
+    {
+        font-size: 0.7em;
     }
 }

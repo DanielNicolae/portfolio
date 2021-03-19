@@ -34,6 +34,15 @@
     padding-bottom: 1em;    
 }
 
+.footer__link
+{
+    display: flex;
+    align-items: center;
+    color:ivory;
+    text-decoration: none;
+    padding-bottom: 1em;
+}
+
 @media only screen and (max-width: 560px)
 {
     .links
@@ -54,12 +63,10 @@
         align-items: center;
     }
 }
-
-.footer__link
+@media only screen and (max-width: 230px)
 {
-    display: flex;
-    align-items: center;
-    color:ivory;
-    text-decoration: none;
-    padding-bottom: 1em;
+    .contacts
+    {
+        font-size: 1.2em;
+    }
 }
