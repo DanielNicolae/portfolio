@@ -39,7 +39,7 @@ const Header = () => {
                 </label>
             </Link>
             <Link to="/about">
-                <label id="about" area-label="About"> About
+                <label area-label="About"> About
                     <input type="radio" name="menu" />
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                 </label>

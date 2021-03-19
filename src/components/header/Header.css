@@ -37,9 +37,13 @@
     
 }
 
-a
+.menuButtons a
 {
     text-decoration: none;
+}
+.menuButtons a:nth-child(2)
+{
+    margin-left: 80px;
 }
 
 .menuButtons
@@ -65,9 +69,6 @@ a
     cursor: pointer;
 }
 
-#about {
-    margin-left: 40px;
-}
 
 .menuButtons label .fa
 {
@@ -118,10 +119,11 @@ a
         line-height: 50px;
         font-size: 30px;
     }
-    #about 
+    .menuButtons a:nth-child(2)
     {
         margin-left: 20px;
     }
+
 }
 @media only screen and (max-width:210px) {
     .header span
@@ -132,13 +134,13 @@ a
     {
         flex-direction: column;
     }
-    #about 
-    {
-        margin-left: 0px;
-    }
     .menuButtons label .fa
     { 
-        margin: 10px 0;
+        margin: 20px 0 0 0;
+    }
+    .menuButtons a:nth-child(2)
+    {
+        margin-left: 0;
     }
 }
 @media only screen and (max-width:160px) {
