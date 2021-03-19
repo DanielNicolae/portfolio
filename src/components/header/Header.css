@@ -37,6 +37,10 @@
     
 }
 
+a
+{
+    text-decoration: none;
+}
 
 .menuButtons
 {
@@ -44,13 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .menuButtons label
 {
     position: relative;
     transform: translate(0, -20px);
+    font-size: 0.1px;
+    color: rgb(6, 2, 37);
 }
 
 .menuButtons label input
@@ -58,6 +63,10 @@
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
+}
+
+#about {
+    margin-left: 40px;
 }
 
 .menuButtons label .fa
@@ -68,7 +77,6 @@
     background-color:   rgb(6, 2, 37);
     line-height: 70px;
     text-align: center;
-    margin: 0 40px;
     color: ivory;
     font-size: 36px;
     cursor: pointer;
@@ -107,9 +115,12 @@
     {
         width: 50px;
         height: 50px;
-        margin: 0 20px;
         line-height: 50px;
         font-size: 30px;
+    }
+    #about 
+    {
+        margin-left: 20px;
     }
 }
 @media only screen and (max-width:210px) {
@@ -121,6 +132,10 @@
     {
         flex-direction: column;
     }
+    #about 
+    {
+        margin-left: 0px;
+    }
     .menuButtons label .fa
     { 
         margin: 10px 0;
@@ -131,5 +146,4 @@
     {
         font-size: 0.5em;
     }
-    
 }
