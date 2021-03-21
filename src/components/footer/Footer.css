@@ -36,11 +36,11 @@
 
 .footer__link
 {
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    margin-bottom: 20px;
     color:ivory;
     text-decoration: none;
-    padding-bottom: 1em;
+    
 }
 
 @media only screen and (max-width: 560px)
@@ -59,14 +59,22 @@
     }
     .footer__link
     {
-        justify-content: center;
-        align-items: center;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 }
-@media only screen and (max-width: 230px)
+@media only screen and (max-width: 260px)
 {
     .contacts
     {
         font-size: 1.2em;
+    }
+    .footer__link
+    {
+        display: flex;
+        margin-left: 0;
+        transform: translate(0);
+        align-items: center;
+        justify-content: center;
     }
 }
