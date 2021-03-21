@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './ContactForm.css';
 import {useForm} from 'react-hook-form';
 import {db} from '../firebase';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
     let [email, setEmail] = useState('');
@@ -9,10 +10,18 @@ const ContactForm = () => {
     let [message, setMessage] = useState('');
 
     let {register, handleSubmit} = useForm();
-
-    
+    const USER_ID = process.env.REACT_APP_USER_ID;
+    const SERV_ID = process.env.REACT_APP_SERV_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
     handleSubmit = (e) => {
         e.preventDefault();
+        emailjs.sendForm('service_nq1zf2l', 'contact_form_portfolio', e.target, USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
         db.collection('contacts').add({
             email: email,
             subject: subject,
