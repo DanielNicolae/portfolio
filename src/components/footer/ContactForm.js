@@ -11,8 +11,6 @@ const ContactForm = () => {
 
     let {register, handleSubmit} = useForm();
     const USER_ID = process.env.REACT_APP_USER_ID;
-    const SERV_ID = process.env.REACT_APP_SERV_ID;
-    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
     handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_nq1zf2l', 'contact_form_portfolio', e.target, USER_ID)
