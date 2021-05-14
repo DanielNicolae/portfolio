@@ -66,11 +66,11 @@
     color: rgb(255, 115, 0);
     text-shadow: 3px 2px   rgba(255, 115, 0, 0.671);
     border: rgba(17, 206, 253, 0.89);
-    background-color: rgba(17, 206, 253, 0.89);
-    box-shadow: 0 0 5px rgba(17, 206, 253, 0.89),
-                0 0 10px rgba(17, 206, 253, 0.89),
-                0 0 25px rgba(17, 206, 253, 0.89),
-                0 0 50px rgba(17, 206, 253, 0.89);
+    background-color: rgba(96, 223, 255, 0.89);
+    box-shadow: 0 0 5px rgba(96, 223, 255, 0.89),
+                0 0 10px rgba(96, 223, 255, 0.89),
+                0 0 25px rgba(96, 223, 255, 0.89),
+                0 0 50px rgba(96, 223, 255, 0.89);
     cursor: pointer;
 }
 
