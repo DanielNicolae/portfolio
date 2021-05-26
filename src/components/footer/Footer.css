@@ -99,3 +99,10 @@
         font-size: 1.3rem;
     }
 }
+@media only screen and (min-width:1900px)
+{
+    .footer
+    {
+        font-size: 2rem;
+    }
+}

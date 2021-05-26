@@ -53,7 +53,8 @@
             letter-spacing: 4px;
             font-weight: bold;
             position: relative;
-            top: 0.85em;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .submitButton span
         {
@@ -145,6 +146,7 @@
     .input
     {
         width: 340px;
+        font-size: 1em;
     }
     .submitButton
     {
@@ -152,10 +154,6 @@
     }
         .submitButton .submitText
         {
-            letter-spacing: 4px;
-            font-weight: bold;
-            position: relative;
-            top: 0.85em;
             font-size: 2.5rem;
         }
         .submitButton span:nth-child(2)
@@ -168,23 +166,30 @@
         }
 
 }
-/* @media screen and (max-width: 230px)
+@media screen and (min-width: 1900px)
 {
     .input
     {
-        width: 100px;
+        width: 1000px;
     }
-    .contactForm p 
+    .submitButton
     {
-        font-size: 0.7em;
+        width: 300px;
     }
-    .submitButton 
-    {
-        font-size: 0.8em;
-        width: 100px;
-    }
+        .submitButton .submitText
+        {
+            font-size: 3rem;
+        }
+        .submitButton span:nth-child(2)
+        {
+            top: -0.8em;
+        }
         .submitButton span:nth-child(3)
         {
-            left: 7.3em;
+            left: 4.6em;
         }
-} */
+        .submitButton span:nth-child(4)
+        {
+            bottom: 1em;
+        }
+}
