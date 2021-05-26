@@ -1,4 +1,4 @@
-.header
+.headerName
 {
     display: flex;
     justify-content: center;
@@ -7,145 +7,110 @@
     background-color: #051230;
     color: ivory;
     position: relative; 
-    width: 100%;  
+    width: 100%;
+    font-weight: 800;
+    font-size: 1em;
 }
-
-.header span
+.transition
 {
-    position: relative;
-    font-size: 2em;
-    display: inline-block;
-    -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(218, 218, 218, 0.5));
-    animation: animate 2s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--i));
+    transform: translateY(-10px);
+    height: 100px;
+    background-image: linear-gradient(#051230, transparent);
 }
-
-@keyframes animate
-{
-    0%
-    {
-        transform: translateY(0px);
-    }
-    20%
-    {
-        transform: translateY(-20px);
-    }
-    40%, 100%
-    {
-        transform: translateY(0px);
-    }
-    
-}
-
-.menuButtons a
-{
-    text-decoration: none;
-}
-.menuButtons a:nth-child(2)
-{
-    margin-left: 80px;
-}
-
 .menuButtons
 {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+    .menuButtons a:nth-child(2)
+    {
+        margin-top: 1.5em;
+    }
+        .menuButtons label
+        {
+            position: relative;
+            transform: translate(0, -20px);
+            font-size: 0.1px;
+            color: rgb(6, 2, 37);
+        }
+            .menuButtons label input
+            {
+                appearance: none;
+                -webkit-appearance: none;
+                cursor: pointer;
+            }
+            .menuButtons label .fa
+            {
+                position: relative;
+                width: 70px;
+                height: 70px;
+                background-color:   rgb(6, 2, 37);
+                line-height: 70px;
+                text-align: center;
+                color: ivory;
+                font-size: 36px;
+                cursor: pointer;
+                border-radius: 50%;
+                box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
+                            3px 3px 7px rgba(0, 0, 0, 0.8);
+            }
+            .menuButtons label .fa:hover
+            {
+                box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
+                            3px 3px 7px rgba(0, 0, 0, 0.8),
+                            inset -3px -3px 10px rgba(255, 255, 255, 0.1),
+                            inset 3px 3px 10px rgba(0, 0, 0, 0.8);
+            }
 
-.menuButtons label
-{
-    position: relative;
-    transform: translate(0, -20px);
-    font-size: 0.1px;
-    color: rgb(6, 2, 37);
-}
 
-.menuButtons label input
-{
-    appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-
-
-.menuButtons label .fa
-{
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background-color:   rgb(6, 2, 37);
-    line-height: 70px;
-    text-align: center;
-    color: ivory;
-    font-size: 36px;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
-                3px 3px 7px rgba(0, 0, 0, 0.8);
-}
-
-.menuButtons label .fa:hover
-{
-    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
-                3px 3px 7px rgba(0, 0, 0, 0.8),
-                inset -3px -3px 10px rgba(255, 255, 255, 0.1),
-                inset 3px 3px 10px rgba(0, 0, 0, 0.8);
-}
-
-.transition
-{
-    transform: translateZ(-10px);
-    height: 40px;
-    background-image: linear-gradient(#051230, transparent);
-}
-
-@media only screen and (max-width:500px) {
-    .header span
+@media only screen and (min-width:312px) {
+    .headerName
     {
         font-size: 1.5em;
     }
-}
-@media only screen and (max-width:300px) {
-    .header span
-    {
-        font-size: 1em;
-    }
-    .menuButtons label .fa
-    {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 30px;
-    }
-    .menuButtons a:nth-child(2)
-    {
-        margin-left: 20px;
-    }
-
-}
-@media only screen and (max-width:210px) {
-    .header span
-    {
-        font-size: 0.7em;
-    }
     .menuButtons
     {
-        flex-direction: column;
+        flex-direction: row;
     }
-    .menuButtons label .fa
-    { 
-        margin: 20px 0 0 0;
+        .menuButtons a:nth-child(2)
+        {
+            margin: 0 0 0 1.5em;
+        }
+            .menuButtons label .fa
+            { 
+                margin: 20px 0 0 0;
+            }
+}
+@media only screen and (min-width:580px) {
+    .headerName
+    {
+        font-size: 2em;
     }
     .menuButtons a:nth-child(2)
     {
-        margin-left: 0;
+        margin: 0 0 0 5em;
     }
+        .menuButtons label .fa
+        {
+            font-size: 3rem;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }   
 }
-@media only screen and (max-width:160px) {
-    .header span
+@media only screen and (min-width:1400px) {
+    .headerName
     {
-        font-size: 0.5em;
-    }
+        font-size: 2.5em;
+    } 
+    .menuButtons label .fa
+    {
+        font-size: 4rem;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }   
 }
