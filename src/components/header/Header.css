@@ -99,18 +99,32 @@
             width: 100px;
             height: 100px;
             line-height: 100px;
-        }   
+        }
 }
 @media only screen and (min-width:1400px) {
     .headerName
     {
         font-size: 2.5em;
-    } 
+    }
     .menuButtons label .fa
     {
         font-size: 4rem;
         width: 120px;
         height: 120px;
         line-height: 120px;
-    }   
+    }
+}
+@media only screen and (min-width:3000px)
+{
+    .headerName
+    {
+        font-size: 4em;
+    }
+    .menuButtons label .fa
+    {
+        font-size: 5rem;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
 }

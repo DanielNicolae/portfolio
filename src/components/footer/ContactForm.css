@@ -193,3 +193,19 @@
             bottom: 1em;
         }
 }
+@media screen and (min-width: 3000px)
+{
+    .input
+    {
+        width: 1000px;
+    }
+    .submitButton
+    {
+        width: 450px;
+    }
+        .submitButton .submitText
+        {
+            font-size: 4.5rem;
+        }
+        
+}
