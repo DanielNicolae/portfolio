@@ -1,16 +1,57 @@
-.headerName
+.container
 {
+    background-color: #051230;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
-    background-color: #051230;
-    color: ivory;
-    position: relative; 
-    width: 100%;
-    font-weight: 800;
-    font-size: 1em;
 }
+    .headerName
+    {
+        transform-style: preserve-3d;
+        animation: barrelRoll 20s linear infinite;
+    }
+    @keyframes barrelRoll
+    {
+        0%
+        {
+            transform: perspective(100px) rotateX(0deg) rotate(5deg);
+            
+        }
+        
+        100%
+        {
+         
+            transform: perspective(100px) rotateX(360deg) rotate(5deg);
+        }
+    }
+        .headerName span
+        {
+            text-shadow: 0.05em 0.05em rgb(90, 90, 90);
+            transform-style: preserve-3d;
+            white-space: nowrap;
+            position: absolute;
+            padding: 10px;
+            font-weight: 800;
+            font-size: 1em;
+            transform: translate(-50%, -50%) rotateX(calc(var(--i) * 60deg)) translateZ(1em);
+            animation: changeColor 10s linear infinite;
+        }
+        @keyframes changeColor
+        {
+            0%
+            {
+                color: ivory;
+            }
+            /* 50%
+            {
+                color: rgb(6, 2, 37);
+            } */
+            100%
+            {
+                color: rgb(6, 2, 37);
+            }
+        }
 .transition
 {
     transform: translateY(-10px);
@@ -67,7 +108,7 @@
 
 
 @media only screen and (min-width:312px) {
-    .headerName
+    .headerName span
     {
         font-size: 1.5em;
     }
@@ -85,7 +126,7 @@
             }
 }
 @media only screen and (min-width:580px) {
-    .headerName
+    .headerName span
     {
         font-size: 2em;
     }
@@ -102,7 +143,7 @@
         }
 }
 @media only screen and (min-width:1400px) {
-    .headerName
+    .headerName span
     {
         font-size: 2.5em;
     }
@@ -116,7 +157,7 @@
 }
 @media only screen and (min-width:3000px)
 {
-    .headerName
+    .headerName span
     {
         font-size: 4em;
     }

@@ -6,8 +6,15 @@ const Header = () => {
 
     return (
         <header>
-            <div className="headerName">
-                DANIEL NICOLAE DONȚU
+            <div className="container">
+                <div className="headerName">
+                    <span style={{ "--i": 1 }}>DANIEL NICOLAE DONȚU</span>
+                    <span style={{ "--i": 2 }}>DANIEL NICOLAE DONȚU</span>
+                    <span style={{ "--i": 3 }}>DANIEL NICOLAE DONȚU</span>
+                    <span style={{ "--i": 4 }}>DANIEL NICOLAE DONȚU</span>
+                    <span style={{ "--i": 5 }}>DANIEL NICOLAE DONȚU</span>
+                    <span style={{ "--i": 6 }}>DANIEL NICOLAE DONȚU</span>
+                </div>
             </div>
             <div className="transition"></div>
 
