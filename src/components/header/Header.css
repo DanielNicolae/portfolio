@@ -1,171 +1,182 @@
-.container
-{
-    background-color: #051230;
-    min-height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    .headerName
+
+    .headerContainer
     {
-        transform-style: preserve-3d;
-        animation: barrelRoll 20s linear infinite;
+        height: 30vh;
+        width: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding:  100px;
+        /* background-color: rgba(138, 138, 138, 0.767); */
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        /* box-shadow: inset 5px 5px 5px rgb(58, 58, 58),
+                    inset -5px -5px 5px rgb(0, 0, 0); */
     }
-    @keyframes barrelRoll
-    {
-        0%
+        .headerName
         {
-            transform: perspective(100px) rotateX(0deg) rotate(5deg);
-            
-        }
-        
-        100%
-        {
-         
-            transform: perspective(100px) rotateX(360deg) rotate(5deg);
-        }
-    }
-        .headerName span
-        {
-            text-shadow: 0.05em 0.05em rgb(90, 90, 90);
-            transform-style: preserve-3d;
-            white-space: nowrap;
             position: absolute;
-            padding: 10px;
-            font-weight: 800;
-            font-size: 1em;
-            transform: translate(-50%, -50%) rotateX(calc(var(--i) * 60deg)) translateZ(1em);
-            animation: changeColor 10s linear infinite;
+            width: 100%;
+            height: 100%;
+            animation: rotateName 8s linear infinite;
         }
-        @keyframes changeColor
+        @keyframes rotateName
         {
             0%
             {
-                color: ivory;
+                transform: rotate(0deg);
             }
-            /* 50%
-            {
-                color: rgb(6, 2, 37);
-            } */
             100%
             {
-                color: rgb(6, 2, 37);
+                transform: rotate(360deg);
             }
         }
-.transition
-{
-    transform: translateY(-10px);
-    height: 100px;
-    background-image: linear-gradient(#051230, transparent);
-}
-.menuButtons
-{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    .menuButtons a:nth-child(2)
+        
+            .headerName span
+            {
+                font-family: monospace;
+                text-shadow: 0.05em 0.05em rgb(90, 90, 90);
+                position: absolute;
+                left: 50%;
+                top: 36%;
+                transform-origin: 0 14vh;
+                font-weight: 800;
+                font-size: 1em;
+                transform: rotate(calc(var(--i)*17deg));
+                animation: changeColor 10s linear infinite;
+                font-size: 3em;
+            }
+            @keyframes changeColor
+            {
+                0%
+                {
+                    color: ivory;
+                }
+                50%
+                {
+                    color: rgb(6, 2, 37);
+                }
+                100%
+                {
+                    color: ivory;
+                }
+            }
+    .transition
     {
-        margin-top: 1.5em;
-    }
-        .menuButtons label
-        {
-            position: relative;
-            transform: translate(0, -20px);
-            font-size: 0.1px;
-            color: rgb(6, 2, 37);
-        }
-            .menuButtons label input
-            {
-                appearance: none;
-                -webkit-appearance: none;
-                cursor: pointer;
-            }
-            .menuButtons label .fa
-            {
-                position: relative;
-                width: 70px;
-                height: 70px;
-                background-color:   rgb(6, 2, 37);
-                line-height: 70px;
-                text-align: center;
-                color: ivory;
-                font-size: 36px;
-                cursor: pointer;
-                border-radius: 50%;
-                box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
-                            3px 3px 7px rgba(0, 0, 0, 0.8);
-            }
-            .menuButtons label .fa:hover
-            {
-                box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
-                            3px 3px 7px rgba(0, 0, 0, 0.8),
-                            inset -3px -3px 10px rgba(255, 255, 255, 0.1),
-                            inset 3px 3px 10px rgba(0, 0, 0, 0.8);
-            }
-
-
-@media only screen and (min-width:312px) {
-    .headerName span
-    {
-        font-size: 1.5em;
+        transform: translateY(-1vh);
+        height: 5vh;
+        background-image: linear-gradient(transparent, rgb(5, 18, 48));
     }
     .menuButtons
     {
-        flex-direction: row;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
         .menuButtons a:nth-child(2)
         {
-            margin: 0 0 0 1.5em;
+            margin-top: 1.5em;
+        }
+            .menuButtons label
+            {
+                position: relative;
+                transform: translate(0, -20px);
+                font-size: 0.1px;
+                color: rgb(6, 2, 37);
+            }
+                .menuButtons label input
+                {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    cursor: pointer;
+                }
+                .menuButtons label .fa
+                {
+                    position: relative;
+                    width: 70px;
+                    height: 70px;
+                    background-color:   rgb(6, 2, 37);
+                    line-height: 70px;
+                    text-align: center;
+                    color: ivory;
+                    font-size: 36px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
+                                3px 3px 7px rgba(0, 0, 0, 0.8);
+                }
+                .menuButtons label .fa:hover
+                {
+                    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
+                                3px 3px 7px rgba(0, 0, 0, 0.8),
+                                inset -3px -3px 10px rgba(255, 255, 255, 0.1),
+                                inset 3px 3px 10px rgba(0, 0, 0, 0.8);
+                }
+
+
+    @media only screen and (min-width:312px) {
+        /* .headerName span
+        {
+            font-size: 1.5em;
+        } */
+        .menuButtons
+        {
+            flex-direction: row;
+        }
+            .menuButtons a:nth-child(2)
+            {
+                margin: 0 0 0 1.5em;
+            }
+                .menuButtons label .fa
+                { 
+                    margin: 20px 0 0 0;
+                }
+    }
+    @media only screen and (min-width:580px) {
+        /* .headerName span
+        {
+            font-size: 2em;
+        } */
+        .menuButtons a:nth-child(2)
+        {
+            margin: 0 0 0 5em;
         }
             .menuButtons label .fa
-            { 
-                margin: 20px 0 0 0;
+            {
+                font-size: 3rem;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
             }
-}
-@media only screen and (min-width:580px) {
-    .headerName span
-    {
-        font-size: 2em;
     }
-    .menuButtons a:nth-child(2)
-    {
-        margin: 0 0 0 5em;
-    }
+    @media only screen and (min-width:1400px) {
+        /* .headerName span
+        {
+            font-size: 2.5em;
+        } */
         .menuButtons label .fa
         {
-            font-size: 3rem;
-            width: 100px;
-            height: 100px;
-            line-height: 100px;
+            font-size: 4rem;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
         }
-}
-@media only screen and (min-width:1400px) {
-    .headerName span
-    {
-        font-size: 2.5em;
     }
-    .menuButtons label .fa
+    @media only screen and (min-width:3000px)
     {
-        font-size: 4rem;
-        width: 120px;
-        height: 120px;
-        line-height: 120px;
+        /* .headerName span
+        {
+            font-size: 4em;
+        } */
+        .menuButtons label .fa
+        {
+            font-size: 5rem;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+        }
     }
-}
-@media only screen and (min-width:3000px)
-{
-    .headerName span
-    {
-        font-size: 4em;
-    }
-    .menuButtons label .fa
-    {
-        font-size: 5rem;
-        width: 150px;
-        height: 150px;
-        line-height: 150px;
-    }
-}

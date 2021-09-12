@@ -1,23 +1,34 @@
 
-*{
+*
+{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 500;
 }
 
-body {
-  
+body 
+{
   background: rgb(6, 2, 37);
 }
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: ivory;
-    margin-top: 2em;
-    font-size: 1em;
+  main .block
+  {
+    z-index: -1;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background: chartreuse;
+    overflow: hidden;
   }
+      main div h1 
+      {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: ivory;
+        margin-top: 2em;
+        font-size: 1em;
+      }
 
 @media only screen and (min-width: 580px)
 {

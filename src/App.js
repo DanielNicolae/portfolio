@@ -3,7 +3,8 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import About from './pages/about';
 import Projects from './pages/projects';
-import {BrowserRouter as BR, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as BR, Switch, Route } from 'react-router-dom';
+import generateBg from './components/background/MainBackground';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </main>
         <Footer />
       </div>
+
     </BR>
   );
 }
