@@ -20,9 +20,9 @@ const Cards = () => {
                 src="./videos/to-do-list.mp4"
                 name="To-do list"
                 description="This is part of the JavaScript course from theodinproject.com" />
-            <Card
+            <Card2
                 path="https://danielnicolae.github.io/Etch-a-Sketch/"
-                src="../videos/etch-a-sketch.gif"
+                src="./videos/etch-a-sketch.gif"
                 name="Etch-a-sketch"
                 description="It's a cancas made in plain JavaScript. You draw by dragging the mouse over the canvas; you can choose the size of the canvas and pick any color." />
             <Card
