@@ -21,11 +21,6 @@ const Cards = () => {
                 name="To-do list"
                 description="This is part of the JavaScript course from theodinproject.com" />
             <Card
-                path="https://danielnicolae.github.io/Calculator/"
-                src="../videos/calculator.gif"
-                name="Calculator"
-                description="This is a calculator made in vanilla JavaScript; it has keyboard functionality." />
-            <Card
                 path="https://danielnicolae.github.io/Etch-a-Sketch/"
                 src="../videos/etch-a-sketch.gif"
                 name="Etch-a-sketch"
