@@ -11,24 +11,28 @@ body
 {
   background: rgb(6, 2, 37);
 }
-  main .block
+  main
   {
-    z-index: -1;
-    position: absolute;
-    width: 3em;
-    height: 3em;
-    background: chartreuse;
-    overflow: hidden;
+    margin-bottom: 7em;
   }
-      main div h1 
-      {
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: ivory;
-        margin-top: 2em;
-        font-size: 1em;
-      }
+    main .block
+    {
+      z-index: -1;
+      position: absolute;
+      width: 3em;
+      height: 3em;
+      background: chartreuse;
+      overflow: hidden;
+    }
+        main div h1 
+        {
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: ivory;
+          margin-top: 2em;
+          font-size: 1em;
+        }
 
 @media only screen and (min-width: 580px)
 {

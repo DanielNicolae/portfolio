@@ -39,11 +39,11 @@ const ContactForm = () => {
     return (
         <form className='contactForm' onSubmit={handleSubmit}>
             <label for='email'>Your email *</label>
-            <input id='email' className='input' type='email' placeholder='*Your email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} ref={register({ required: true })} required="required" />
+            <input id='email' className='input' type='email' placeholder='Your email*' name='email' value={email} onChange={(e) => setEmail(e.target.value)} ref={register({ required: true })} required="required" />
             <label for='subject'>Subject *</label>
-            <input id='subject' className='input' type='text' placeholder='*Subject' name='subject' value={subject} onChange={(e) => setSubject(e.target.value)} ref={register({ required: true })} required="required" />
+            <input id='subject' className='input' type='text' placeholder='Subject*' name='subject' value={subject} onChange={(e) => setSubject(e.target.value)} ref={register({ required: true })} required="required" />
             <label for='message'>Message *</label>
-            <textarea id='message' className='input messageArea' type='text' placeholder='*Message...' name='message' value={message} onChange={(e) => setMessage(e.target.value)} ref={register({ required: true })} required="required" />
+            <textarea id='message' className='input messageArea' type='text' placeholder='Message...*' name='message' value={message} onChange={(e) => setMessage(e.target.value)} ref={register({ required: true })} required="required" />
             <p>* The field is required</p>
             <button className='submitButton' type='submit'>
                 <span className='submitText'>SUBMIT</span>
